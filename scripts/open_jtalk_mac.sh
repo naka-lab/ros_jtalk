@@ -10,7 +10,7 @@ cd $this_dir
 echo $1 > speech.txt
 
 open_jtalk \
--m /opt/homebrew/Cellar/open-jtalk/1.11/voice/mei/mei_happy.htsvoice \
+-m mei_happy.htsvoice \
 -x naist-jdic \
 -s 48000 \
 -p 240 \
