@@ -12,7 +12,7 @@ class OpenJTalk():
         rospy.Subscriber("jtalk/utterance", std_msgs.msg.String, self.say)
 
         if platform.system()=="Darwin": # Macの場合
-            self._open_jtalk_script = os.path.join(os.path.dirname(__file__), "open_jtalk_mac.sh")
+            self._open_jtalk_script = os.path.join(os.path.abspath(os.path.dirname(__file__)), "open_jtalk_mac.sh")
         else:
             self._open_jtalk_script = os.path.join(os.path.dirname(__file__), "open_jtalk.sh")
 
